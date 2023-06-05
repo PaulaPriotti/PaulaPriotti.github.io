@@ -48,13 +48,26 @@ body{
 }
 .article{
     grid-column: 1/6;
-    border: solid 2px;
 }
 .article img{
     justify-content: center;
     grid-column: 1/6;
-
+    margin-right: 5px;
 }
+
+.especie{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#img1{
+    margin-right: 10px;
+}
+#img2{
+    margin-left: 100px;
+}
+
+
 
 .footer{
     background-color:#ffe194b7;

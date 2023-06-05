@@ -1,0 +1,20 @@
+.conteinter .titulo{
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+}
+.conteinter .cuidados{
+    background-color:#ffe194b7;
+    margin: 30px;
+    padding: 50px;
+}
+.conteinter .cuidados p{
+    padding-top:10px;
+}
+img{
+    width: 34%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}

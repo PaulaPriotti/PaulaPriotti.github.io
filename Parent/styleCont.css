@@ -2,32 +2,33 @@
     margin: 0;
     padding: 0;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    height: 120px;
-    background-color:#ffe194b7;
-}
-body header{
-    /*font-family:Georgia, serif;*/
-    /*font-family:sans-serif;*/
-    font-family: "Trirong", serif;
-}
-.logo{
-    display: flex;
-}
-.logo img{
-    height: 120px;
-}
-.logo h1{
-    margin-top: 40px;
-    margin-left: 20px;
-}
-.bar{
-    margin-top: 50px;
-    margin-right: 20px;
-}
 
 .title{
-    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.formulario form{
+    border: 2px solid #ffe194b7;
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.formulario{
+    height: 500px;
+    display: flex;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+#errores li{
+    margin-left:20px;
+    color:red;
+}
+.mal{
+    border: 1px solid red;
+    outline: none;
 }

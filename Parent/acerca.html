@@ -5,22 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleacerca.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Acerca de nosotros</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="/Imagenes/MascotasFelicesLogo.png" alt="Logo">
+            <img src="../Imagenes/MascotasFelicesLogo.png" alt="Logo">
             <h1>MASCOTAS FELICES</h1>
         </div>
         <div class="bar">
-            <tr>
-                <th><a href="file:///C:/Users/Paula%20Priotti/Desktop/ULP/Web%20I/PaulaPriotti.github.io/index.html">Inicio</a></th>
-                <th><a href="file:///C:/Users/Paula%20Priotti/Desktop/ULP/Web%20I/PaulaPriotti.github.io/Parent/acerca.html">Acerca de nosotros</a></th>
-                <th>Gatos</th>
-                <th>Perros</th>
-                <th><a href="file:///C:/Users/Paula%20Priotti/Desktop/ULP/Web%20I/PaulaPriotti.github.io/Parent/contacto.html">Contactate con nosotros</a></th>
-            </tr>
+            <a href="file:///C:/Users/Paula%20Priotti/Desktop/ULP/Web%20I/PaulaPriotti.github.io/index.html">Inicio</a>
+            <a href="file:///C:/Users/Paula%20Priotti/Desktop/ULP/Web%20I/PaulaPriotti.github.io/Parent/acerca.html">Acerca de nosotros</a>
+            <a href="file:///C:/Users/Paula%20Priotti/Desktop/ULP/Web%20I/PaulaPriotti.github.io/Parent/gatos.html">Gatos</a>
+            <a href="file:///C:/Users/Paula%20Priotti/Desktop/ULP/Web%20I/PaulaPriotti.github.io/Parent/perros.html">Perros</a>
+            <a href="file:///C:/Users/Paula%20Priotti/Desktop/ULP/Web%20I/PaulaPriotti.github.io/Parent/contacto.html">Contactate con nosotros</a>
         </div>
     </header>
     <div class="conteiner">
@@ -40,75 +39,16 @@
         </div>
     </div>
     <div class="carrusel">
-        <div class="slideshow-container">
-            <div class="Slides fade">
-            <img src="/Imagenes/Silvestre1.jpg" style="width: 100%">
-            <div class="text">Primera vez</div>
-            </div>
-            
-            <div class="Slides fade">
-            <img src="/Imagenes/Silvestre2.jpg" style="width:100%">
-            <div class="text">Progresos</div>
-            </div>
-            
-            <div class="Slides fade">
-            <img src="/Imagenes/Silvestre3.jpg" style="width:100%">
-            <div class="text">Mas progresos</div>
-            </div>
-
-            <div class="Slides fade">
-            <img src="/Imagenes/Silvestre4.jpg" style="width:100%">
-            <div class="text">Un gato sano</div>
-            </div>
-
-            <div class="Slides fade">
-            <img src="/Imagenes/Silvestre5.jpg" style="width:100%">
-            <div class="text">Silvestre</div>
-            </div>
-            
-            <a class="prev" onclick="plusSlides(-1)"><</a>
-            <a class="next" onclick="plusSlides(1)">></a>
-            
+        <div class="visor">
+            <img src="" alt="" id="imgvisor">
         </div>
-
-        <br>
-        <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span> 
+        <div class="controles">
+            <img src="../Imagenes/arrow-left.png" alt="" id="izquierda">
+            <img src="../Imagenes/arrow-right.png" alt="" id="derecha">
         </div>
-
-        <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        }
-        </script>
-
     </div>
+    <script src="carrusel.js">
+
+    </script>
 </body>
 </html>

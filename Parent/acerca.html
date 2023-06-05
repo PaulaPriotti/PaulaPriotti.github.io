@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleacerca.css">
+    <title>Acerca de nosotros</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Imagenes/MascotasFelicesLogo.png" alt="Logo">
+            <h1>MASCOTAS FELICES</h1>
+        </div>
+        <div class="bar">
+            <tr>
+                <th><a href="file:///C:/Users/Paula%20Priotti/Desktop/ULP/Web%20I/PaulaPriotti.github.io/index.html">Inicio</a></th>
+                <th><a href="file:///C:/Users/Paula%20Priotti/Desktop/ULP/Web%20I/PaulaPriotti.github.io/Parent/acerca.html">Acerca de nosotros</a></th>
+                <th>Gatos</th>
+                <th>Perros</th>
+                <th><a href="file:///C:/Users/Paula%20Priotti/Desktop/ULP/Web%20I/PaulaPriotti.github.io/Parent/contacto.html">Contactate con nosotros</a></th>
+            </tr>
+        </div>
+    </header>
+    <div class="conteiner">
+        <div class="info">
+            <div class="aboutUs">
+                <h2 class="title">
+                    Mascotas Felices: Rescatando Esperanzas y Brindando Hogares Amorosos para Perros y Gatos
+                </h2>
+                <p>Fundada en 2021 por Paula Gonzalez Priotti, Mascotas Felices es una destacada organización sin fines de lucro dedicada al rescate y cuidado de perros y gatos en situación de vulnerabilidad. Con un compromiso inquebrantable con el bienestar animal, esta fundación ha marcado una diferencia significativa en la vida de numerosas mascotas necesitadas.</p>
+                <p>Mascotas Felices se ha convertido en un faro de esperanza para aquellos animales que han sufrido abandono, maltrato o negligencia. La fundación trabaja arduamente para rescatar a perros y gatos en situaciones precarias, brindándoles atención médica integral, alimentación adecuada y un refugio seguro. El equipo de Mascotas Felices está compuesto por un grupo de profesionales apasionados por los animales, entre ellos veterinarios, cuidadores y voluntarios comprometidos, quienes dedican su tiempo y esfuerzo para garantizar que cada mascota reciba el amor y los cuidados que merece.</p>
+                <p>Una de las principales metas de Mascotas Felices es encontrar hogares permanentes y amorosos para sus rescatados. A través de un riguroso proceso de adopción, la fundación se asegura de que cada mascota sea colocada en un entorno adecuado y con familias comprometidas, donde puedan recibir el cariño y la atención que tanto necesitan. Además, se brinda asesoramiento y seguimiento post-adopción para garantizar la integración exitosa del animal en su nuevo hogar.</p>
+                <p>Mascotas Felices también se dedica a la educación y promoción de la tenencia responsable de mascotas. Con el objetivo de crear conciencia sobre la importancia del cuidado animal, la fundación realiza campañas de esterilización, vacunación y charlas informativas en la comunidad. Además, trabajan en colaboración con otros actores del bienestar animal y organizaciones locales para fortalecer la protección y los derechos de los animales en general.</p>
+                <p>La pasión y el compromiso de Paula Gonzalez Priotti han sido la fuerza impulsora detrás del éxito de Mascotas Felices. Su visión de un mundo donde cada mascota tenga un hogar seguro y lleno de amor ha inspirado a muchas personas a unirse a esta noble causa.</p>
+                <p>Si deseas contribuir o ser parte de Mascotas Felices, puedes hacerlo mediante donaciones, voluntariado o incluso considerando la adopción de una mascota rescatada. Tu apoyo marcará la diferencia en la vida de aquellos que no tienen voz propia.</p>
+                <p>Mascotas Felices continúa su valiosa labor, transformando vidas peludas y sembrando felicidad en cada huella que cruza su camino. Con su compromiso incansable, están creando un mundo más compasivo y solidario para nuestros amigos de cuatro patas."</p>
+            </div>
+        </div>
+    </div>
+    <div class="carrusel">
+        <div class="slideshow-container">
+            <div class="Slides fade">
+            <img src="/Imagenes/Silvestre1.jpg" style="width: 100%">
+            <div class="text">Primera vez</div>
+            </div>
+            
+            <div class="Slides fade">
+            <img src="/Imagenes/Silvestre2.jpg" style="width:100%">
+            <div class="text">Progresos</div>
+            </div>
+            
+            <div class="Slides fade">
+            <img src="/Imagenes/Silvestre3.jpg" style="width:100%">
+            <div class="text">Mas progresos</div>
+            </div>
+
+            <div class="Slides fade">
+            <img src="/Imagenes/Silvestre4.jpg" style="width:100%">
+            <div class="text">Un gato sano</div>
+            </div>
+
+            <div class="Slides fade">
+            <img src="/Imagenes/Silvestre5.jpg" style="width:100%">
+            <div class="text">Silvestre</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)"><</a>
+            <a class="next" onclick="plusSlides(1)">></a>
+            
+        </div>
+
+        <br>
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        </div>
+
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+    </div>
+</body>
+</html>

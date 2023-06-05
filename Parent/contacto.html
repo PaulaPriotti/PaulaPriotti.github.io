@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCont.css">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Imagenes/MascotasFelicesLogo.png" alt="Logo">
+            <h1>MASCOTAS FELICES</h1>
+        </div>
+        <div class="bar">
+            <tr>
+                <th><a href="file:///C:/Users/Paula%20Priotti/Desktop/ULP/Web%20I/PaulaPriotti.github.io/index.html">Inicio</a></th>
+                <th><a href="file:///C:/Users/Paula%20Priotti/Desktop/ULP/Web%20I/PaulaPriotti.github.io/Parent/acerca.html">Acerca de nosotros</a></th>
+                <th>Gatos</th>
+                <th>Perros</th>
+                <th><a href="file:///C:/Users/Paula%20Priotti/Desktop/ULP/Web%20I/PaulaPriotti.github.io/Parent/contacto.html">Contactate con nosotros</a></th>
+            </tr>
+        </div>
+    </header>
+    <div class="title">
+        <h1>FORMULARIO DE CONTACTO</h1>
+    </div>
+    <form action="/action_page.php" autocomplete="on">
+        <label for="fname">Nombre</label><br>
+        <input type="text" name="flastname" id="fname"><br>
+        <label for="flastname">Apellido</label><br>
+        <input type="text" name="flastname" id="flastname"><br>
+        <label for="femail">Correo electronico</label><br>
+        <input type="text" name="femail" id="femail"><br>
+        <p>Seleccione el motivo de su contacto:</p>
+        <input type="checkbox" id="mot1" name="mot1" value="donacion">
+        <label for="Donacion">Donacion</label><br>
+        <input type="checkbox" id="mot2" name="mot2" value="adop">
+        <label for="adop">Adopcion</label><br>
+        <input type="checkbox" id="mot3" name="mot3" value="volunt">
+        <label for="volunt">Ser voluntario</label><br>
+        <!--<input type="submit" value="Enviar">-->
+        <button type="button" onclick="alert('Seguro que desea enviar formulario?')">Enviar</button>
+
+
+
+
+    </form>
+</body>
+</html>

@@ -7,10 +7,11 @@ header{
     justify-content: space-between;
     height: 120px;
     background-color:#ffe194b7;
+    font-family: "Trirong", serif !important; 
 }
-body header{
-    font-family: "Trirong", serif;
-}
+/* body header{
+    
+} */
 body{
     font-family:sans-serif;
 }

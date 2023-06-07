@@ -52,6 +52,37 @@ f.addEventListener("submit", (e)=>{
         check2.parentElement.classList.add('mal');
         check3.parentElement.classList.add('mal');
     }
+
+    if(!bandera){
+        let carga=document.getElementById("carga");
+        let lista=document.createElement("ul");
+        let liNombre=document.createElement("li");
+        liNombre.innerHTML=nombre.value;
+        let liApellido=document.createElement("li");
+        liApellido.innerHTML=apellido.value;
+        let liCorreo=document.createElement("li");
+        liCorreo.innerHTML=email.value;
+        let liCheck=document.querySelectorAll(".ch");
+        let liMotivo=document.createElement("li");
+
+        liCheck.forEach(e=>{
+            if(e.checked){
+                liMotivo.innerHTML+=e.value+" - ";
+            }
+        })
+
+        lista.appendChild(liNombre);
+        lista.appendChild(liApellido);
+        lista.appendChild(liCorreo);
+        lista.appendChild(liMotivo);
+
+        carga.appendChild(lista);
+
+        f.reset();
+        nombre.focus();
+    }
+    
+
 });
 
 

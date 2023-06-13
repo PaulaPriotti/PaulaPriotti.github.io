@@ -57,11 +57,10 @@ f.addEventListener("submit", (e)=>{
         let carga=document.getElementById("carga");
         let lista=document.createElement("ul");
         let liNombre=document.createElement("li");
-        liNombre.innerHTML=nombre.value;
-        let liApellido=document.createElement("li");
-        liApellido.innerHTML=apellido.value;
+        liNombre.innerHTML=`<h3>${nombre.value} ${apellido.value}<\h3>`
+        
         let liCorreo=document.createElement("li");
-        liCorreo.innerHTML=email.value;
+        liCorreo.innerHTML=`<h5>${email.value}<\h5>`;
         let liCheck=document.querySelectorAll(".ch");
         let liMotivo=document.createElement("li");
 
@@ -72,7 +71,6 @@ f.addEventListener("submit", (e)=>{
         })
 
         lista.appendChild(liNombre);
-        lista.appendChild(liApellido);
         lista.appendChild(liCorreo);
         lista.appendChild(liMotivo);
 

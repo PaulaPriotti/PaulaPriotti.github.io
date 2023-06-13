@@ -44,12 +44,7 @@ button{
     outline: none;
 }
 
-#carga{
-    justify-content: space-between;
-}
-
 #carga ul{
-    display: flex;
     border-radius: 10px;
     border: 5px solid #b0ea43da;
     list-style: none;

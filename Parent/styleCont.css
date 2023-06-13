@@ -8,6 +8,7 @@
     margin-top: 30px;
     font-family: "Trirong", serif;
 }
+
 .formulario form{
     /* background-color:#f7b716b0; */
     background-color: #b0ea43;
@@ -44,8 +45,14 @@ button{
 }
 
 #carga{
+    justify-content: space-between;
+}
+
+#carga ul{
     display: flex;
-    justify-content: center;
     border-radius: 10px;
-    margin: 2px solid #b0ea43da;
+    border: 5px solid #b0ea43da;
+    list-style: none;
+    margin: 20px;
+    padding: 15px;
 }

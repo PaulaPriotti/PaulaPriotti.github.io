@@ -81,7 +81,6 @@ f.addEventListener("submit", (e)=>{
         f.reset();
         nombre.focus();
     }
-    
 
 });
 
